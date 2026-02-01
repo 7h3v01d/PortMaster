@@ -1,0 +1,165 @@
+
+(venv) E:\Projects\portmaster\src>pytest -v
+=================================================================================== test session starts ====================================================================================
+platform win32 -- Python 3.11.5, pytest-8.4.1, pluggy-1.6.0 -- E:\Projects\portsniffer\venv\Scripts\python.exe
+cachedir: .pytest_cache
+PyQt6 6.9.1 -- Qt runtime 6.9.1 -- Qt compiled 6.9.0
+rootdir: E:\Projects\portmaster\src
+plugins: mock-3.14.1, qt-4.5.0, timeout-2.4.0
+collected 23 items
+
+test_cleanup.py::test_cleanup_ports PASSED                                                                                                                                            [  4%]
+test_core.py::test_list_connections PASSED                                                                                                                                            [  8%]
+test_core.py::test_check_port[8080-True-Port 8080 is in use by PID 1234 (python.exe)] PASSED                                                                                          [ 13%]
+test_core.py::test_check_port[9090-False-Port 9090 is not in use] PASSED                                                                                                              [ 17%]
+test_core.py::test_check_port_invalid[abc-1] PASSED                                                                                                                                   [ 21%]
+test_core.py::test_check_port_invalid[99999-1] PASSED                                                                                                                                 [ 26%]
+test_core.py::test_kill_process PASSED                                                                                                                                                [ 30%]
+test_core.py::test_kill_process_no_confirm PASSED                                                                                                                                     [ 34%]
+test_core.py::test_kill_process_not_exist PASSED                                                                                                                                      [ 39%]
+test_core.py::test_block_port[TCP] PASSED                                                                                                                                             [ 43%]
+test_core.py::test_block_port[UDP] PASSED                                                                                                                                             [ 47%]
+test_core.py::test_unblock_port[TCP] PASSED                                                                                                                                           [ 52%]
+test_core.py::test_unblock_port[UDP] PASSED                                                                                                                                           [ 56%]
+test_core.py::test_reserve_port PASSED                                                                                                                                                [ 60%]
+test_core.py::test_release_port PASSED                                                                                                                                                [ 65%]
+test_core.py::test_save_connections PASSED                                                                                                                                            [ 69%]
+test_gui.py::test_gui_list_connections PASSED                                                                                                                                         [ 73%]
+test_gui.py::test_gui_check_port PASSED                                                                                                                                               [ 78%]
+test_gui.py::test_gui_kill_process PASSED                                                                                                                                             [ 82%]
+test_gui.py::test_gui_block_port PASSED                                                                                                                                               [ 86%]
+test_zeromq.py::test_zeromq_scenarios[zeromq_throughput] FAILED                                                                                                                       [ 91%]
+test_zeromq.py::test_zeromq_scenarios[cortical_output] FAILED                                                                                                                         [ 95%]
+test_zeromq.py::test_zeromq_scenarios[router_simulation] FAILED                                                                                                                       [100%]
+
+========================================================================================= FAILURES =========================================================================================
+_________________________________________________________________________ test_zeromq_scenarios[zeromq_throughput] _________________________________________________________________________
+
+scenario = 'zeromq_throughput'
+
+    @pytest.mark.parametrize("scenario", [
+        "zeromq_throughput",
+        "cortical_output",
+        "router_simulation"
+    ])
+    @pytest.mark.timeout(120)
+    def test_zeromq_scenarios(scenario):
+        """
+        Tests ZeroMQ PUB-SUB functionality for various scenarios.
+        """
+        cleanup()
+        port = find_free_port()
+        log(f"Testing scenario '{scenario}' on port {port}")
+
+        result = {"success": False, "error": None}
+        def run_zeromq():
+            try:
+                simulate_zeromq_pub_sub(port, test_mode=True)
+                result["success"] = True
+            except Exception as e:
+                result["error"] = str(e)
+                log(f"Test for '{scenario}' failed in thread: {str(e)}")
+
+        zmq_thread = threading.Thread(target=run_zeromq)
+        zmq_thread.start()
+
+        time.sleep(2)
+        port_bound = is_port_bound(port)
+
+        zmq_thread.join(timeout=15)
+
+        if not port_bound:
+            log(f"Test for '{scenario}' failed: Port {port} not bound during test")
+>           pytest.fail(f"Scenario '{scenario}' failed: Port {port} not bound during test")
+E           Failed: Scenario 'zeromq_throughput' failed: Port 58119 not bound during test
+
+test_zeromq.py:89: Failed
+__________________________________________________________________________ test_zeromq_scenarios[cortical_output] __________________________________________________________________________
+
+scenario = 'cortical_output'
+
+    @pytest.mark.parametrize("scenario", [
+        "zeromq_throughput",
+        "cortical_output",
+        "router_simulation"
+    ])
+    @pytest.mark.timeout(120)
+    def test_zeromq_scenarios(scenario):
+        """
+        Tests ZeroMQ PUB-SUB functionality for various scenarios.
+        """
+        cleanup()
+        port = find_free_port()
+        log(f"Testing scenario '{scenario}' on port {port}")
+
+        result = {"success": False, "error": None}
+        def run_zeromq():
+            try:
+                simulate_zeromq_pub_sub(port, test_mode=True)
+                result["success"] = True
+            except Exception as e:
+                result["error"] = str(e)
+                log(f"Test for '{scenario}' failed in thread: {str(e)}")
+
+        zmq_thread = threading.Thread(target=run_zeromq)
+        zmq_thread.start()
+
+        time.sleep(2)
+        port_bound = is_port_bound(port)
+
+        zmq_thread.join(timeout=15)
+
+        if not port_bound:
+            log(f"Test for '{scenario}' failed: Port {port} not bound during test")
+>           pytest.fail(f"Scenario '{scenario}' failed: Port {port} not bound during test")
+E           Failed: Scenario 'cortical_output' failed: Port 58133 not bound during test
+
+test_zeromq.py:89: Failed
+_________________________________________________________________________ test_zeromq_scenarios[router_simulation] _________________________________________________________________________
+
+scenario = 'router_simulation'
+
+    @pytest.mark.parametrize("scenario", [
+        "zeromq_throughput",
+        "cortical_output",
+        "router_simulation"
+    ])
+    @pytest.mark.timeout(120)
+    def test_zeromq_scenarios(scenario):
+        """
+        Tests ZeroMQ PUB-SUB functionality for various scenarios.
+        """
+        cleanup()
+        port = find_free_port()
+        log(f"Testing scenario '{scenario}' on port {port}")
+
+        result = {"success": False, "error": None}
+        def run_zeromq():
+            try:
+                simulate_zeromq_pub_sub(port, test_mode=True)
+                result["success"] = True
+            except Exception as e:
+                result["error"] = str(e)
+                log(f"Test for '{scenario}' failed in thread: {str(e)}")
+
+        zmq_thread = threading.Thread(target=run_zeromq)
+        zmq_thread.start()
+
+        time.sleep(2)
+        port_bound = is_port_bound(port)
+
+        zmq_thread.join(timeout=15)
+
+        if not port_bound:
+            log(f"Test for '{scenario}' failed: Port {port} not bound during test")
+>           pytest.fail(f"Scenario '{scenario}' failed: Port {port} not bound during test")
+E           Failed: Scenario 'router_simulation' failed: Port 58148 not bound during test
+
+test_zeromq.py:89: Failed
+================================================================================= short test summary info ==================================================================================
+FAILED test_zeromq.py::test_zeromq_scenarios[zeromq_throughput] - Failed: Scenario 'zeromq_throughput' failed: Port 58119 not bound during test
+FAILED test_zeromq.py::test_zeromq_scenarios[cortical_output] - Failed: Scenario 'cortical_output' failed: Port 58133 not bound during test
+FAILED test_zeromq.py::test_zeromq_scenarios[router_simulation] - Failed: Scenario 'router_simulation' failed: Port 58148 not bound during test
+============================================================================== 3 failed, 20 passed in 25.38s ===============================================================================
+
+(venv) E:\Projects\portmaster\src>

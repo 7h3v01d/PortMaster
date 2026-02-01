@@ -1,0 +1,165 @@
+2025-09-03 13:58:51 - Listed 156 connections
+2025-09-03 13:59:20 - Listed 155 connections
+2025-09-03 13:59:20 - Listed 154 connections
+2025-09-03 13:59:51 - Found free port 19045
+2025-09-03 13:59:51 - Bound PUB socket to tcp://*:19045
+2025-09-03 13:59:51 - Connected SUB socket to tcp://localhost:19045
+2025-09-03 13:59:51 - Received message: Test message
+2025-09-03 13:59:51 - Extended PUB socket lifetime for test
+2025-09-03 13:59:59 - Found free port 19057
+2025-09-03 13:59:59 - Bound PUB socket to tcp://*:19057
+2025-09-03 13:59:59 - Connected SUB socket to tcp://localhost:19057
+2025-09-03 13:59:59 - Received message: Test message
+2025-09-03 14:00:00 - Extended PUB socket lifetime for test
+2025-09-03 14:00:07 - Found free port 19069
+2025-09-03 14:00:07 - Bound PUB socket to tcp://*:19069
+2025-09-03 14:00:07 - Connected SUB socket to tcp://localhost:19069
+2025-09-03 14:00:08 - Received message: Test message
+2025-09-03 14:00:08 - Extended PUB socket lifetime for test
+2025-09-03 14:08:55 - Found free port 19133
+2025-09-03 14:08:55 - Bound PUB socket to tcp://*:19133
+2025-09-03 14:08:55 - Connected SUB socket to tcp://localhost:19133
+2025-09-03 14:08:55 - Received message: Test message
+2025-09-03 14:08:55 - Extended PUB socket lifetime for test
+2025-09-03 14:09:03 - Found free port 19145
+2025-09-03 14:09:03 - Bound PUB socket to tcp://*:19145
+2025-09-03 14:09:03 - Connected SUB socket to tcp://localhost:19145
+2025-09-03 14:09:03 - Received message: Test message
+2025-09-03 14:09:03 - Extended PUB socket lifetime for test
+2025-09-03 14:09:11 - Found free port 19157
+2025-09-03 14:09:11 - Bound PUB socket to tcp://*:19157
+2025-09-03 14:09:11 - Connected SUB socket to tcp://localhost:19157
+2025-09-03 14:09:11 - Received message: Test message
+2025-09-03 14:09:11 - Extended PUB socket lifetime for test
+2025-09-03 14:23:06 - Found free port 19211
+2025-09-03 14:23:06 - Bound PUB socket to tcp://*:19211
+2025-09-03 14:23:06 - Connected SUB socket to tcp://localhost:19211
+2025-09-03 14:23:06 - Received message: Test message
+2025-09-03 14:23:06 - Extended PUB socket lifetime for test
+2025-09-03 14:23:14 - Found free port 19225
+2025-09-03 14:23:14 - Bound PUB socket to tcp://*:19225
+2025-09-03 14:23:14 - Connected SUB socket to tcp://localhost:19225
+2025-09-03 14:23:14 - Received message: Test message
+2025-09-03 14:23:14 - Extended PUB socket lifetime for test
+2025-09-03 14:23:22 - Found free port 19237
+2025-09-03 14:23:22 - Bound PUB socket to tcp://*:19237
+2025-09-03 14:23:22 - Connected SUB socket to tcp://localhost:19237
+2025-09-03 14:23:22 - Received message: Test message
+2025-09-03 14:23:22 - Extended PUB socket lifetime for test
+2025-09-03 14:24:32 - Found free port 19250
+2025-09-03 14:24:32 - Bound PUB socket to tcp://*:19250
+2025-09-03 14:24:32 - Connected SUB socket to tcp://localhost:19250
+2025-09-03 14:24:33 - Received message: Test message
+2025-09-03 14:24:33 - Extended PUB socket lifetime for test
+2025-09-03 14:24:41 - Found free port 19263
+2025-09-03 14:24:41 - Bound PUB socket to tcp://*:19263
+2025-09-03 14:24:41 - Connected SUB socket to tcp://localhost:19263
+2025-09-03 14:24:41 - Received message: Test message
+2025-09-03 14:24:41 - Extended PUB socket lifetime for test
+2025-09-03 14:24:49 - Found free port 19276
+2025-09-03 14:24:49 - Bound PUB socket to tcp://*:19276
+2025-09-03 14:24:49 - Connected SUB socket to tcp://localhost:19276
+2025-09-03 14:24:49 - Received message: Test message
+2025-09-03 14:24:49 - Extended PUB socket lifetime for test
+2025-09-03 14:31:52 - Found free port 58074
+2025-09-03 14:31:52 - Bound PUB socket to tcp://*:58074
+2025-09-03 14:31:52 - Connected SUB socket to tcp://localhost:58074
+2025-09-03 14:31:52 - Received message: Test message
+2025-09-03 14:31:52 - Extended PUB socket lifetime for test
+2025-09-03 14:32:00 - Found free port 58086
+2025-09-03 14:32:00 - Bound PUB socket to tcp://*:58086
+2025-09-03 14:32:00 - Connected SUB socket to tcp://localhost:58086
+2025-09-03 14:32:00 - Received message: Test message
+2025-09-03 14:32:00 - Extended PUB socket lifetime for test
+2025-09-03 14:32:08 - Found free port 58098
+2025-09-03 14:32:08 - Bound PUB socket to tcp://*:58098
+2025-09-03 14:32:08 - Connected SUB socket to tcp://localhost:58098
+2025-09-03 14:32:08 - Received message: Test message
+2025-09-03 14:32:09 - Extended PUB socket lifetime for test
+2025-09-03 14:34:32 - Found free port 58119
+2025-09-03 14:34:32 - Bound PUB socket to tcp://*:58119
+2025-09-03 14:34:32 - Connected SUB socket to tcp://localhost:58119
+2025-09-03 14:34:32 - Received message: Test message
+2025-09-03 14:34:32 - Extended PUB socket lifetime for test
+2025-09-03 14:34:40 - Found free port 58133
+2025-09-03 14:34:40 - Bound PUB socket to tcp://*:58133
+2025-09-03 14:34:40 - Connected SUB socket to tcp://localhost:58133
+2025-09-03 14:34:40 - Received message: Test message
+2025-09-03 14:34:40 - Extended PUB socket lifetime for test
+2025-09-03 14:34:49 - Found free port 58148
+2025-09-03 14:34:49 - Bound PUB socket to tcp://*:58148
+2025-09-03 14:34:49 - Connected SUB socket to tcp://localhost:58148
+2025-09-03 14:34:49 - Received message: Test message
+2025-09-03 14:34:49 - Extended PUB socket lifetime for test
+2025-09-03 14:51:14 - Found free port 58250
+2025-09-03 14:51:14 - ZeroMQ error: Address in use (addr='tcp://*:58250')
+2025-09-03 14:51:22 - Found free port 58261
+2025-09-03 14:51:22 - ZeroMQ error: Address in use (addr='tcp://*:58261')
+2025-09-03 14:51:30 - Found free port 58272
+2025-09-03 14:51:30 - ZeroMQ error: Address in use (addr='tcp://*:58272')
+2025-09-03 14:56:56 - Found free port 58313
+2025-09-03 14:56:56 - Bind failed for port 58313: Address in use (addr='tcp://*:58313'), retrying after 0.5s
+2025-09-03 14:56:57 - Bind failed for port 58313: Address in use (addr='tcp://*:58313'), retrying after 0.5s
+2025-09-03 14:56:57 - ZeroMQ error: Address in use (addr='tcp://*:58313')
+2025-09-03 14:57:04 - Found free port 58324
+2025-09-03 14:57:04 - Bind failed for port 58324: Address in use (addr='tcp://*:58324'), retrying after 0.5s
+2025-09-03 14:57:05 - Bind failed for port 58324: Address in use (addr='tcp://*:58324'), retrying after 0.5s
+2025-09-03 14:57:05 - ZeroMQ error: Address in use (addr='tcp://*:58324')
+2025-09-03 14:57:12 - Found free port 58336
+2025-09-03 14:57:12 - Bind failed for port 58336: Address in use (addr='tcp://*:58336'), retrying after 0.5s
+2025-09-03 14:57:13 - Bind failed for port 58336: Address in use (addr='tcp://*:58336'), retrying after 0.5s
+2025-09-03 14:57:13 - ZeroMQ error: Address in use (addr='tcp://*:58336')
+2025-09-03 15:00:04 - Listed 160 connections
+2025-09-03 15:00:28 - Found free port 58362 on attempt 1
+2025-09-03 15:00:28 - Bind failed for port 58362: Address in use (addr='tcp://*:58362'), retrying after 0.5s
+2025-09-03 15:00:29 - Bind failed for port 58362: Address in use (addr='tcp://*:58362'), retrying after 0.5s
+2025-09-03 15:00:29 - ZeroMQ error: Address in use (addr='tcp://*:58362')
+2025-09-03 15:00:38 - Found free port 58373 on attempt 1
+2025-09-03 15:00:38 - Bind failed for port 58373: Address in use (addr='tcp://*:58373'), retrying after 0.5s
+2025-09-03 15:00:39 - Bind failed for port 58373: Address in use (addr='tcp://*:58373'), retrying after 0.5s
+2025-09-03 15:00:39 - ZeroMQ error: Address in use (addr='tcp://*:58373')
+2025-09-03 15:00:48 - Found free port 58385 on attempt 1
+2025-09-03 15:00:48 - Bind failed for port 58385: Address in use (addr='tcp://*:58385'), retrying after 0.5s
+2025-09-03 15:00:49 - Bind failed for port 58385: Address in use (addr='tcp://*:58385'), retrying after 0.5s
+2025-09-03 15:00:49 - ZeroMQ error: Address in use (addr='tcp://*:58385')
+2025-09-03 15:55:15 - Found free port 10186 on attempt 1
+2025-09-03 15:55:15 - Bind failed for port 10186: Address in use (addr='tcp://*:10186'), retrying after 0.5s
+2025-09-03 15:55:15 - Bind failed for port 10186: Address in use (addr='tcp://*:10186'), retrying after 0.5s
+2025-09-03 15:55:16 - ZeroMQ error: Address in use (addr='tcp://*:10186')
+2025-09-03 15:55:23 - Found free port 10198 on attempt 1
+2025-09-03 15:55:23 - Bind failed for port 10198: Address in use (addr='tcp://*:10198'), retrying after 0.5s
+2025-09-03 15:55:23 - Bind failed for port 10198: Address in use (addr='tcp://*:10198'), retrying after 0.5s
+2025-09-03 15:55:24 - ZeroMQ error: Address in use (addr='tcp://*:10198')
+2025-09-03 15:55:31 - Found free port 10209 on attempt 1
+2025-09-03 15:55:31 - Bind failed for port 10209: Address in use (addr='tcp://*:10209'), retrying after 0.5s
+2025-09-03 15:55:32 - Bind failed for port 10209: Address in use (addr='tcp://*:10209'), retrying after 0.5s
+2025-09-03 15:55:32 - ZeroMQ error: Address in use (addr='tcp://*:10209')
+2025-09-03 15:59:48 - Found free port 10237 on attempt 1
+2025-09-03 15:59:48 - Bind failed for port 10237: Address in use (addr='tcp://*:10237'), retrying after 0.5s
+2025-09-03 15:59:49 - Bind failed for port 10237: Address in use (addr='tcp://*:10237'), retrying after 0.5s
+2025-09-03 15:59:49 - ZeroMQ error: Address in use (addr='tcp://*:10237')
+2025-09-03 15:59:56 - Found free port 10250 on attempt 1
+2025-09-03 15:59:56 - Bind failed for port 10250: Address in use (addr='tcp://*:10250'), retrying after 0.5s
+2025-09-03 15:59:57 - Bind failed for port 10250: Address in use (addr='tcp://*:10250'), retrying after 0.5s
+2025-09-03 15:59:57 - ZeroMQ error: Address in use (addr='tcp://*:10250')
+2025-09-03 16:00:04 - Found free port 10262 on attempt 1
+2025-09-03 16:00:04 - Bind failed for port 10262: Address in use (addr='tcp://*:10262'), retrying after 0.5s
+2025-09-03 16:00:05 - Bind failed for port 10262: Address in use (addr='tcp://*:10262'), retrying after 0.5s
+2025-09-03 16:00:05 - ZeroMQ error: Address in use (addr='tcp://*:10262')
+2025-09-09 14:24:02 - Listed 176 connections
+2025-09-09 14:24:16 - Port 5001 in use by PID 215736
+2025-09-09 14:25:13 - Port 5002 is not in use
+2025-09-09 14:44:37 - Port 5002 in use by PID 211424
+2025-09-09 15:01:02 - Port 5002 in use by PID 211424
+2025-09-09 15:01:03 - Port 5002 in use by PID 211424
+2025-09-09 15:01:04 - Port 5002 in use by PID 211424
+2025-09-09 15:01:04 - Port 5002 in use by PID 211424
+2025-09-09 15:01:05 - Port 5002 in use by PID 211424
+2025-09-09 15:01:05 - Port 5002 in use by PID 211424
+2025-09-09 15:01:15 - Port 5002 in use by PID 211424
+2025-09-09 15:01:15 - Port 5002 in use by PID 211424
+2025-09-09 15:01:15 - Port 5002 in use by PID 211424
+2025-09-09 15:01:20 - Port 5001 is not in use
+2025-09-09 15:04:20 - Port 5001 in use by PID 221860
+2025-09-15 18:13:19 - Listed 158 connections
+2026-02-01 12:07:32 - Listed 170 connections
